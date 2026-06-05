@@ -1,0 +1,15 @@
+
+#right_column .content{height:100%;}
+
+div#right-content div.content-bloc div.final-content div.small_form-submit { text-align: center;  width: 200px;float: left;}
+div#right-content div.content-bloc div.final-content div.small_form-submit a{background: #000;	 transition: all 0.4s ease 0s;-webkit-border-radius: 4px;-moz-border-radius: 4px;border-radius: 4px; border: medium none; color: #FFFFFF;  cursor: pointer;display: block;padding: 10px 0;  text-transform: uppercase;transition: all 0.4s ease 0s;	font-size: 1.1em;    font-weight: bold;}
+div#right-content div.content-bloc div.final-content div.small_form-submit a:hover{background: #e4e4e4;}
+
+div.gridster{clear:both;}
+div.gridster ul li{background:#ccc}
+div.gridster ul li div.action{position: absolute; top: 0px; z-index:10; position: absolute; width:100%;}
+
+div.gridster ul li div.close_grid{position: absolute; right: 5px; top: 5px; cursor:pointer}
+div.element{height: 100%; overflow: hidden; width: 100%;position: absolute;top:0}
+div.element >div{position:absolute;top:0;z-index: 5; }
+div.element img{height: auto;width: 100%; position:absolute; top:0;}

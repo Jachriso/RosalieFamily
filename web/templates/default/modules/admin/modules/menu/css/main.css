@@ -1,0 +1,201 @@
+#left-content {
+	height: 100vh; 
+	min-height: 100%; 
+	position: relative;  
+	width: 250px;  
+	z-index: 500;
+	font-family: 'Work Sans', sans-serif;
+	background-color: #36384A;
+	position: fixed;
+	overflow-y: auto;
+	color: white;
+}
+
+#menu-responsive{
+	padding-bottom: 60px;
+}
+
+.intro span{
+	margin-top: 30px;
+	display: block;
+	font-size: 15px;
+	margin-left: 35px;
+	height: 30px;
+}
+
+a{color: white}
+div#left-content ul li{color:#696965;}
+.site_link{
+	margin-top: 30px;
+	font-size: 12px;
+	font-weight: initial;
+}
+
+.list_lang{
+	margin-left: 35px;
+	color: #8993AF;
+}
+
+.list_lang a{
+	color: #8993AF; 
+	font-size: 15px; 
+	text-transform: uppercase;
+	font-weight: initial;
+}
+
+
+.username, .account{
+	margin-left: 40px;
+	display: block;
+	font-size: 12px; 
+	text-transform: capitalize;
+	font-weight: initial;
+	line-height: 20px;
+}
+
+.account{
+	color: #8993AF;
+	font-size: 12px;
+}
+
+#left-content div.logo { 
+	margin: 25px 18px 0 35px;
+	width: 80px;
+	height: 80px;
+	overflow: hidden;
+	background-color: aliceblue;
+	float: left;
+}
+
+#left-content div.logo img{ 
+	max-height: 80px;
+}
+
+.menu_part{width: 100%;}
+
+ul li.menu_part > a, ul li.menu_part > span{
+	color: #fff;
+	display: block;
+	height: 50px;
+	line-height: 50px;
+	font-size: 15px;
+	font-weight: initial;
+	text-align: left;
+	text-transform: capitalize;
+	padding: 0 25px 0 30px;
+}
+
+.header-info{
+	width: calc(100% - 60px);
+	margin-top: 25px;
+	margin-bottom: 10px;
+	border-bottom: 1px solid #4B4C65;
+	padding-bottom: 20px;
+	margin-left: 30px;
+}
+
+ul li.menu_part > a, ul li.menu_part > span{cursor:pointer;}
+
+.menu_part>span img.icon, .menu_part>span svg.icon, .header-info img.icon, .header-info svg.icon{
+	vertical-align: middle;
+	margin: 0px 15px 0 -5px;
+	width: 30px;
+}
+
+.header-info img.icon, .header-info svg.icon{
+	float: left;
+	padding-top: 5px;
+}
+
+.menu_part>span img.drop, .menu_part>span svg.drop{
+	-webkit-transform: rotate(-90deg);
+	transform: rotate(-90deg);
+	margin-top: 10px;
+	margin-right: -10px;
+	width: 30px;
+	float: right;
+	-webkit-transition: transform 300ms ease-in;
+	-webkit-transition: -webkit-transform 300ms ease-in;
+	transition: -webkit-transform 300ms ease-in;
+	transition: transform 300ms ease-in;
+	transition: transform 300ms ease-in, -webkit-transform 300ms ease-in;
+}
+
+.menu_part>span.open img.drop, .menu_part>span.open svg.drop{
+	-webkit-transform: rotate(0deg);
+	transform: rotate(0deg);
+}
+
+ul li.menu_part >div.smenu {height:0; overflow:hidden;}
+ul li.menu_part.activ >div.smenu {height:auto;}
+ul li.menu_part div.smenu ul li ul li a{
+	color: #B3C1E3;
+	display: block;
+	font-size: 12.5px;
+	height: 40px;
+	line-height: 40px;
+	padding-left: 40px;
+	text-align: left;
+	font-weight: 300;
+	letter-spacing: 0.3px;
+	-webkit-text-stroke: 0.1px;
+}
+
+ul li.menu_part div.smenu > ul > li > ul.onlyone > li > a, ul li.menu_part div.smenu > ul > li > span{
+	display: block;
+	font-size: 12px;
+	color: #fff;
+	text-transform: uppercase;
+	padding-left: 30px;
+	height: 40px;
+	line-height: 40px;
+	text-align: left;
+	position: relative; 
+	font-weight: 400;
+}
+
+.smenu ul li{width: 100%;}
+
+.smenu ul li ul li:hover a{color: #fff !important;}
+.smenu ul li ul li.activ{border-left: 10px solid #FF8384;}
+.smenu ul li ul:not(.onlyone) li.activ a{padding-left: 30px !important;}
+.onlyone li.activ a{padding-left: 20px !important;}
+
+.ico-shutdown{
+	top: 5px;
+	position: absolute;
+	margin-right: 10px;
+}
+
+div#left-content div.form-submit{ 
+	position: fixed; 
+	text-align: center;
+	width: 250px; 
+	bottom:0px
+}
+
+div#left-content div.form-submit a{
+	background: #FF6970;
+	color: #fff;
+	cursor: pointer;
+	display: block;
+	font-size: 13px;
+	font-weight: initial;
+	letter-spacing: 0.8px;
+	padding: 0px 0;
+	text-transform: capitalize;
+	-webkit-transition: all 0.4s ease 0s;
+	transition: all 0.4s ease 0s;
+	width: 100%;
+	line-height: 30px;
+	padding: 8px 10px 8px 0;
+	box-sizing: border-box;
+}
+
+div#left-content div.form-submit a img, div#left-content div.form-submit a svg{
+	width: 30px;
+	vertical-align: middle;
+	margin: -1px 10px 1px 0;
+}
+
+div#left-content div.form-submit a:hover{background-color: #FF8384;}

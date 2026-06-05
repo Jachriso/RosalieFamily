@@ -1,0 +1,88 @@
+div#right-content div.content-bloc div.final-content div.content-col form#engine_form div.search-button{float:right;position:relative}
+
+div#right-content div.content-bloc div.final-content div.content-col form#engine_form div.search-button input#search.search{background:none repeat scroll 0 0;border:2px solid #e4e4e4;-webkit-border-top-left-radius:4px;-webkit-border-bottom-left-radius:4px;-moz-border-radius-topleft:4px;-moz-border-radius-bottomleft:4px;border-top-left-radius:4px;border-bottom-left-radius:4px;color:#ccc;height:25px;padding:3px 10px;width:335px;font-size:1.2em}
+div#right-content div.content-bloc div.final-content div.content-col form#engine_form div.search-button a{-webkit-transition:all 0.4s ease 0s;transition:all 0.4s ease 0s;background:#e4e4e4;display:block;float:right;height:31px;width:31px;border:2px solid #e4e4e4;border-left:none medium;-webkit-border-top-right-radius:4px;-webkit-border-bottom-right-radius:4px;-moz-border-radius-topright:4px;-moz-border-radius-bottomright:4px;border-top-right-radius:4px;border-bottom-right-radius:4px}
+div#right-content div.content-bloc div.final-content div.content-col form#engine_form div.search-button a:hover{background:#fff}
+div#right-content div.content-bloc div.final-content{padding:70px 0px 30px}
+.add{text-align:center;width:200px}
+.add a{background:#000;-webkit-transition:all 0.4s ease 0s;transition:all 0.4s ease 0s;border-radius:4px;border:medium none;color:#FFFFFF;cursor:pointer;display:block;padding:10px 0;text-transform:uppercase;transition:all 0.4s ease 0s;font-size:1.1em;font-weight:bold}
+.add a:hover{background:#e4e4e4}
+.title-list .item-element{min-width:70px;overflow:hidden;height:20px}
+.title-list .item-element a{position:relative;font-size:1em;line-height:1.5em;color:#333;text-transform:uppercase}
+div#right-content div.content-bloc div.final-content div.content-col div.list-content ul.result-list ul.menuOpen{display:block !important}
+div#right-content div.content-bloc div.final-content div.content-col div.list-content ul.result-list li.list_item div.action a span.ico-edit{left:5px;position:relative;top:5px}
+div#right-content div.content-bloc div.final-content div.content-col div.list-content ul.result-list li.list_item div.action a span.ico-delete{left:5px;position:relative;top:5px}
+div#right-content div.content-bloc div.final-content div.content-col div.list-content ul.result-list li.list_item div.action a span.ico-preview{left:5px;position:relative;top:6px}
+div#right-content div.content-bloc div.final-content div.content-col div.list-content ul.result-list li.list_item div.action a span.ico-view{left:5px;position:relative;top:5px}
+.line{width:100%;min-height:60px;box-sizing:border-box;border-bottom:1px solid #F0F2F7}
+.action{position:absolute !important;right:0}
+.line:hover>.action{opacity:1}
+.line:hover{background-color:#F8F9FB;border-bottom:1px solid #F0F2F7}
+.slist-element{padding:0 0 0 20px}
+.sslist-element{padding:0 0 0 40px}
+.ssslist-element{padding:0 0 0 60px}
+.sssslist-element{padding:0 0 0 180px}
+.list-content{background-color:#fff;font-size:0}
+.list_item{box-sizing:border-box;min-height:60px;position:relative;padding:0;cursor:default !important;display:inline-block}
+.ui-sortable>li>.line{cursor:move}
+.list_item ul{height:0px;overflow:hidden;clear:both;position:relative}
+.list_item ul.menuOpen{height:auto}
+.list_item .item-element{display:inline-block;margin-left:13px;padding-top:15px;padding-bottom:15px;width:calc(100% - 220px)}
+.open-close+.item-element{margin-left:0px}
+.item-element span{color:#63657B;letter-spacing:0;font-size:12.5px;line-height:30px}
+.list_item ul{-webkit-transition:max-height 0.5s ease-in-out;transition:max-height 0.5s ease-in-out}
+.open-close{float:left;display:inline-block;margin-top:15px;margin-right:3px;margin:15px 3px 0px 60px;width:30px;height:30px;cursor:pointer}
+.open-close img{-webkit-transform:rotate(-90deg);transform:rotate(-90deg);-webkit-transition:transform 300ms ease-in;-webkit-transition:-webkit-transform 300ms ease-in;transition:-webkit-transform 300ms ease-in;transition:transform 300ms ease-in;transition:transform 300ms ease-in, -webkit-transform 300ms ease-in}
+.open>div>.open-close img{-webkit-transform:rotate(0deg);transform:rotate(0deg)}
+.no-child{float:left;padding:10px;width:15px;margin-left:60px}
+.item-element,.item-element,.action,.responsive-label{position:relative;font-size:12px;font-weight:initial;letter-spacing:0px;letter-spacing:0.6px;color:#63657B}
+.list_item .action a span{margin:20px;width:20px;height:20px}
+.list_item .action a:hover{background:#B3C1E3}
+.list_item .action a:last-of-type:hover{background:#FF8384}
+.list_item .action a{background:none}
+.online{width:60px;height:60px;position:absolute}
+.online:hover+.line{background-color:#F8F9FB}
+.list_item>.check,.title-list>.check{width:65px !important}
+.element-lign{float:left}
+.element-lign.action{width:120px !important}
+.list_item .action{opacity:0;height:60px;position:absolute;top:0}
+.list_item .action a{-o-border-image:none;border-image:none;border-style:solid solid solid none;display:block;float:right;height:60px;width:60px;position:relative}
+.list_item .action .more{display:none}
+.list_item .action a svg,.list_item .action a img{width:30px;top:0;right:0;bottom:0;left:0;position:absolute;margin:auto}
+.list_item .action a img:last-of-type{display:none}
+.list_item .action a:hover path[style*="stroke"],.list_item .action a:hover circle[style*="stroke"],.list_item .action a:hover rect[style*="stroke"],.list_item .action a:hover ellipse[style*="stroke"],.list_item .action a:hover line[style*="stroke"],.list_item .action a:hover polyline[style*="stroke"],.list_item .action a:hover polygon[style*="stroke"]{stroke:#FFF !important}
+.list_item .action a:hover img:first-of-type{display:none}
+.list_item .action a:hover img:last-of-type{display:block}
+.action .switch{font-size:0px;margin-right:60px}
+.switch span{position:absolute;font-size:0px !important}
+.switch img,.switch svg{margin:15px 0px 15px 25px;cursor:pointer;position:absolute;width:30px;-webkit-transition:-webkit-transform .2s ease-in-out;transition:-webkit-transform .2s ease-in-out;transition:transform .2s ease-in-out;transition:transform .2s ease-in-out, -webkit-transform .2s ease-in-out}
+.switch img:hover,.switch svg:hover{-webkit-transform:scale(1.1);transform:scale(1.1)}
+.switch-1 img:last-of-type,.switch-1 svg:last-of-type{display:none}
+.switch-0 img:first-of-type,.switch-0 svg:first-of-type{display:none}
+@media screen and (max-width: 768px){.action{opacity:1 !important;transition:all .3s ease}
+.action a:not(.more){pointer-events:none;opacity:0;width:0px;height:40px !important;margin-top:10px;margin-left:0px;transition:all .3s ease}
+.action a:not(.more) path[style*="stroke"],.action a:not(.more) circle[style*="stroke"],.action a:not(.more) rect[style*="stroke"],.action a:not(.more) ellipse[style*="stroke"],.action a:not(.more) line[style*="stroke"],.action a:not(.more) polyline[style*="stroke"],.action a:not(.more) polygon[style*="stroke"]{stroke:#FFF !important}
+.action.open a:not(.more){pointer-events:all;margin-left:5px;opacity:1;width:40px;background-color:transparent !important}
+.action.open{padding-left:10px;background-color:#B3C1E3}
+.action.open path[style*="stroke"],.action.open circle[style*="stroke"],.action.open rect[style*="stroke"],.action.open ellipse[style*="stroke"],.action.open line[style*="stroke"],.action.open polyline[style*="stroke"],.action.open polygon[style*="stroke"]{stroke:#FFF !important}
+.action.hidden,.action.hidden .more{opacity:0;pointer-events:none}
+.action .more{transition:opacity .3s ease;background:transparent !important}
+.action:hover{background-color:#B3C1E3}
+.list_item .action .more{display:block}
+.action img{padding:5px !important}
+.switch img,.switch svg{margin-left:10px}
+.open-close,.no-child{margin-left:40px}
+.list_item .item-element{width:calc(100% - 160px)}
+.sssslist-element{padding-left:160px}
+}
+@media screen and (max-width: 480px){.slist-element{padding-left:10px}
+.sslist-element{padding-left:20px}
+.ssslist-element{padding-left:30px}
+.sssslist-element{padding-left:110px}
+.list_item{height:auto}
+}
+
+.list_item .action a:hover svg path, .list_item .action a:hover svg circle{stroke: #FFF !important}
+.list_item .action a img:last-of-type, .list_item .action a svg:last-of-type{display: none;}
+.list_item .action a:hover img:first-of-type, .list_item .action a:hover svg:first-of-type{display: none;}
+.list_item .action a:hover img:last-of-type, .list_item .action a:hover svg:last-of-type{display: block;}

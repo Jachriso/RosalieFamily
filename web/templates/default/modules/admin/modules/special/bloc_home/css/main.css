@@ -1,0 +1,89 @@
+
+#right_column .content{height:100%;}
+
+div#container > div{display: inline-flex;}
+div#container div.colored{background:#fa4616;} 
+div#container div.element_square div div.element_title div.picto {
+    position: relative;
+    top: -50px;
+}
+div#container div.element_square div.onclick {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 3;
+}
+
+div#container div.element_square div div.onclick a {
+    display: block;
+    height: 100%;
+    width: 100%;
+    z-index: 3;
+}
+
+div#container div.element_square div div.element_title {
+    margin-top: 50%;
+}
+div#container div.element_square div div.element_title {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    z-index: 2;
+}
+h2.element_title {
+    border-bottom: 1px solid #fa4616;
+    color: #fff;
+    display: inline;
+    font-size: 1.7em;
+    text-align: center;
+    text-transform: uppercase;
+}
+div#container div.element_square{width:20%;min-width:240px;}
+div#container div.element_square a{width: 100%; display: inline-flex;}
+div#container div.element_square a img{width:100%;height:auto;}
+div#container div.element_square >img{width:100%;height:auto;}
+div#container div.element_landscape{width:40%;min-width:480px;min-height:240px}
+div#container div.element_landscape a{width:100%;display: inline-flex;}
+div#container div.element_landscape a img{width:100%;height:auto;}
+div#container div.element_landscape img{width:100%;height:auto;}
+div#container div.element_portrait{width:20%;min-width:240px;}
+div#container div.element_portrait >img{width:100%;height:auto;}
+div#container div.element div.element_text{position:absolute;display: block; width: 100%; height:100%}
+h2.element_title{font-size:1.7em; color:#fff; text-align:center;}
+div#container div.element.element_portrait div img.element_fake{}
+div#container div.element.element_portrait div.element_text >div{padding:10px 15px;}
+div#container div.element.element_portrait div.element_text ul{}
+div#container div.element.element_portrait div.element_text ul li{border-top:1px solid #ebebeb; padding:10px;position: relative;}
+div#container div.element.element_portrait div.element_text ul li:hover{ padding:10px;position: relative;}
+div#container div.element.element_portrait div.element_text div ul li div.event_detail{border-left:solid 5px #fa4616; color:#fff}
+div#container div.element.element_portrait div.element_text div ul li:hover div.event_detail{border-left:solid 5px #fff;}
+div#container div.element.element_portrait div.element_text div ul li div.event_detail a{color:#fff}
+div#container div.element.element_portrait div.element_text div ul li:hover div.event_detail a{font-size:1.5em}
+div#container div.element.element_portrait div.element_text div ul li div.event_date{color:#fff; font-size: 2em; line-height: 1em;width: 70px;position: absolute; right: 0; top: 10px;text-align: right;}
+div#container div.element.element_square div.element_text iframe{height:100% !important;width:100% !important;}
+
+div#container div.element_square div.element_home div.home_thumb {
+    height: 100%;
+    position: absolute;
+    width: 100%;
+}
+div#container div.element_square > div div.hover {
+    background: none repeat scroll 0 0 #000;
+    height: 100%;
+    opacity: 0.5;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+div#container div.element.element_square.kit span {
+    bottom: 40px;
+    color: #fff;
+    display: block;
+    font-size: 2em;
+    position: absolute;
+    text-align: center;
+    text-transform: uppercase;
+    width: 100%;
+}

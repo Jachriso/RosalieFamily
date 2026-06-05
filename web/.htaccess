@@ -1,0 +1,203 @@
+setenv APPLICATION_ENV development
+
+#--------------------------------------------------
+# SYSTEM
+#--------------------------------------------------
+# secure htaccess file
+#<Files .htaccess>
+#	order allow,deny
+#	deny from all
+#</Files>
+
+#php_value upload_max_filesize 400M
+#php_value post_max_size 400M
+#php_value max_execution_time 300
+#php_value max_input_time 300
+
+#--------------------------------------------------
+# CACHE
+#--------------------------------------------------
+#<ifmodule mod_headers.c>
+	#<filesmatch "\\.(ico|jpe?g|png|gif|swf|gz|ttf)$">
+ 		#Header set Cache-Control "max-age=2592000, public"
+	#</filesmatch>
+	#<filesmatch "\\.(css)$">
+		#Header set Cache-Control "max-age=2592000, public"
+	#</filesmatch>
+	#<filesmatch "\\.(js)$">
+		#Header set Cache-Control "max-age=2592000, private"
+	#</filesmatch>
+	#<filesmatch "\\.(html|htm)$">
+		#Header set Cache-Control "max-age=7200, public"
+	#</filesmatch>
+# Disable caching for scripts and other dynamic files
+	#<filesmatch "\.(pl|php|cgi|spl|scgi|fcgi)$">
+		#Header unset Cache-Control
+	#</filesmatch>
+#</ifmodule>
+
+#--------------------------------------------------
+# COMPRESSION
+#--------------------------------------------------
+<IfModule mod_deflate.c>
+    <filesMatch "\.(js|css|html|php|ico|jpe?g|png|gif|swf|gz|ttf)$">
+        SetOutputFilter DEFLATE
+    </filesMatch>
+</IfModule>
+
+
+#--------------------------------------------------
+# REWRITING
+#--------------------------------------------------
+#Options +FollowSymlinks
+RewriteEngine on
+RewriteBase /
+
+#--------------------------------------------------
+# PDF VIEWER
+#--------------------------------------------------
+RewriteRule ^pdf_viewer/([_a-zA-Z0-9-]*)\.([a-zA-Z]+)$ index.php?level1=pdf_viewer&file=$1.$2 [QSA,L]
+
+#--------------------------------------------------
+# TEMPLATES
+#--------------------------------------------------
+RewriteRule ^templates/([_a-z-]*)\.html$ index.php?level1=templates&plugin=$1 [QSA,L]
+RewriteRule ^templates/([_a-z-]*)\/([_a-z0-9-]*)\.html$ index.php?level1=templates&template=$1&mode=$2 [QSA,L]
+
+#--------------------------------------------------
+# DOWNLOAD
+#--------------------------------------------------
+RewriteRule ^media_download/([_a-z0-9-]*)\/([_a-z0-9-]*)\.([a-zA-Z]+)$ index.php?level1=media_download&type=$1&file=$2.$3 [QSA,L]
+
+#--------------------------------------------------
+# UPLOAD
+#--------------------------------------------------
+RewriteRule ^media_upload/([_a-z0-9-]*)\/([_a-z0-9-]{0,20})$ index.php?level1=media_upload&type=$1&file=$2 [QSA,L]
+
+#--------------------------------------------------
+# PLUGINS
+#--------------------------------------------------
+RewriteRule ^plugins/([_a-z-]*)\.html$ index.php?level1=plugins&plugin=$1 [QSA,L]
+RewriteRule ^plugins/([_a-z-]*)\/([_a-z0-9-]*)\.html$ index.php?level1=plugins&plugin=$1&mode=$2 [QSA,L]
+
+#--------------------------------------------------
+# RESETPWD
+#--------------------------------------------------
+#RewriteRule ^([_a-z0-9-]*)\/{0,1}\/reset/([_a-zA-Z0-9-]*)$ index.php?lang=$1&level1=reset&reset=$2 [QSA,L]
+
+#--------------------------------------------------
+# CONFIRMATION
+#--------------------------------------------------
+RewriteRule ^([_a-z0-9-]*)\/{0,1}\/confirm/([_a-zA-Z0-9-]*)$ index.php?lang=$1&level1=confirm&confirm=$2 [QSA,L]
+
+#--------------------------------------------------
+# URI
+#--------------------------------------------------
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !\.html
+RewriteRule ^(.+).htm$ $1.html [L,R=301]
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !\.html
+RewriteCond %{REQUEST_FILENAME} !\.htm
+RewriteRule ^(.+)/$ $1.html [L,R=301]
+
+#RewriteCond %{REQUEST_FILENAME} !-d
+#RewriteCond %{REQUEST_FILENAME} !\.html
+#RewriteRule ^(.+)\.[a-z]{0,4}$ $1.html [L,R=301]
+
+RewriteCond %{REQUEST_URI} !\.[^/]+$
+RewriteRule (.+) $1.html [L,R=301]
+
+RewriteRule ^([_a-z0-9-]*)\/{0,1}([_a-z0-9-’]*)\/{0,1}([_a-z0-9-]*)\/{0,1}([_a-z0-9-]*)\/{0,1}([_a-z0-9-]*)\/{0,1}([_a-z0-9-]*)\/{0,1}.html$ index.php?lang=$1&level1=$2&level2=$3&level3=$4&level4=$5&level5=$6 [QSA,L]
+
+#Check to see if browser can accept gzip files. If so and we have it   serve it!
+ReWriteCond %{HTTP:accept-encoding} gzip
+RewriteCond %{HTTP_USER_AGENT} !Safari
+#make sure there s no trailing .gz on the url
+ReWriteCond %{REQUEST_FILENAME} !^.+.gz$
+#check to see if a .gz version of the file exists.
+RewriteCond %{REQUEST_FILENAME}.gz -f
+#All conditions met so add .gz to URL filename (invisibly)
+RewriteRule ^(.+) $1.gz [QSA,L]
+
+<ifmodule mod_gzip.c>
+	mod_gzip_on Yes
+	mod_gzip_dechunk Yes
+	mod_gzip_keep_workfiles No
+	mod_gzip_can_negotiate Yes
+	mod_gzip_add_header_count Yes
+	mod_gzip_send_vary Yes
+	mod_gzip_command_version ‘/mod_gzip_status’
+	mod_gzip_min_http 1000
+	mod_gzip_minimum_file_size 300
+	mod_gzip_maximum_file_size 512000
+	mod_gzip_maximum_inmem_size 60000
+	mod_gzip_handle_methods GET POST
+	mod_gzip_temp_dir _/tmp
+	mod_gzip_item_include file .html$
+	mod_gzip_item_include file .php$
+	mod_gzip_item_include file .pl$
+	mod_gzip_item_include file .rb$
+	mod_gzip_item_include file .py$
+	mod_gzip_item_include file .cgi$
+	mod_gzip_item_include file .css$
+	mod_gzip_item_include file .js$
+	mod_gzip_item_include mime ^application/javascript$
+	mod_gzip_item_include mime ^application/x-javascript$
+	mod_gzip_item_include mime ^text/.*
+	mod_gzip_item_include mime ^httpd/unix-directory$
+	mod_gzip_item_include handler ^cgi-script$
+	mod_gzip_item_include handler ^server-status$
+	mod_gzip_item_include handler ^server-info$
+	mod_gzip_item_include handler ^application/x-httpd-php
+	mod_gzip_item_exclude mime ^image/.*
+</ifmodule>
+
+<ifmodule mod_expires.c>
+	ExpiresActive On
+	ExpiresDefault "access plus 7200 seconds"
+	ExpiresByType image/jpg "access plus 2592000 seconds"
+	ExpiresByType image/jpeg "access plus 2592000 seconds"
+	ExpiresByType image/png "access plus 2592000 seconds"
+	ExpiresByType image/gif "access plus 2592000 seconds"
+	AddType image/x-icon .ico
+	ExpiresByType image/ico "access plus 2592000 seconds"
+	ExpiresByType image/icon "access plus 2592000 seconds"
+	ExpiresByType image/x-icon "access plus 2592000 seconds"
+	ExpiresByType text/css "access plus 2592000 seconds"
+	ExpiresByType text/javascript "access plus 2592000 seconds"
+	ExpiresByType text/html "access plus 7200 seconds"
+	ExpiresByType application/xhtml+xml "access plus 7200 seconds"
+	ExpiresByType application/javascript A259200
+	ExpiresByType application/x-javascript "access plus 2592000 seconds"
+	ExpiresByType application/x-shockwave-flash "access plus 2592000 seconds"
+</ifmodule>
+
+#--------------------------------------------------
+# MINIFIERS
+#--------------------------------------------------
+RewriteRule ^js/js-([a-z_]{1,32})\.js$ js/minifier_js.php?id=$1 [L]
+RewriteRule ^css/css-([a-z_]{1,32})\.css$ css/minifier_css.php?id=$1 [L]
+
+#--------------------------------------------------
+# SECURITY
+#--------------------------------------------------
+#Header set X-Frame-Options DENY
+#Header always append X-Frame-Options SAMEORIGIN
+
+#RewriteCond %{QUERY_STRING} !^id=[^&]+ [NC]
+# proc/self/environ? no way!
+RewriteCond %{QUERY_STRING} proc/self/environ [OR]
+# Block out any script trying to set a mosConfig value through the URL
+RewriteCond %{QUERY_STRING} mosConfig_[a-zA-Z_]{1,21}(=|\%3D) [OR]
+# Block out any script trying to base64_encode crap to send via URL
+RewriteCond %{QUERY_STRING} base64_encode.*(.*) [OR]
+# Block out any script that includes a <script> tag in URL
+RewriteCond %{QUERY_STRING} (<|%3C).*script.*(>|%3E) [NC,OR]
+# Block out any script trying to set a PHP GLOBALS variable via URL
+RewriteCond %{QUERY_STRING} GLOBALS(=|[|\%[0-9A-Z]{0,2}) [OR]
+# Block out any script trying to modify a _REQUEST variable via URL
+RewriteCond %{QUERY_STRING} _REQUEST(=|[|\%[0-9A-Z]{0,2})
+# Send all blocked request to homepage with 403 Forbidden error!
+RewriteRule ^(.*)$ index.php [F,L]

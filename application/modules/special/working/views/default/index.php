@@ -1,0 +1,3 @@
+<?php echo $starter->_get_lexique("Notre site est en maintenance,<br> repassez bientôt !");?>
+<img src="<?php echo $starter->MEDIA_PATH . 'static/login-logo.png';?>" alt="<?php echo $starter->_get_lexique("working progress");?>" title="<?php echo $starter->_get_lexique("working progress");?>" />
+<img src="<?php echo $starter->MEDIA_PATH . "static/bg_working.jpg";?>" alt="<?php echo $starter->_get_lexique("Identification");?>" title="<?php echo $starter->_get_lexique("Identification");?>" />

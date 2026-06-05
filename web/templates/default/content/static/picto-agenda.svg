@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <g id="Groupe_68" data-name="Groupe 68" transform="translate(-331 -354)">
+    <g id="Calendar" transform="translate(331 354)">
+      <rect id="Rectangle" width="24" height="24" fill="none"/>
+      <g id="Group" transform="translate(3 2)">
+        <path id="Shape" d="M2,19a1.951,1.951,0,0,1-2-1.9L.01,3.8A1.942,1.942,0,0,1,2,1.9H3V0H5V1.9h8V0h2V1.9h1a1.951,1.951,0,0,1,2,1.9V17.1A1.951,1.951,0,0,1,16,19Z" fill="#f48453"/>
+        <rect id="Rectangle-2" data-name="Rectangle" width="9" height="2" transform="translate(4 8)" fill="#f48453"/>
+        <rect id="Rectangle-3" data-name="Rectangle" width="8" height="2" transform="translate(4 12)" fill="#f48453"/>
+      </g>
+    </g>
+  </g>
+</svg>

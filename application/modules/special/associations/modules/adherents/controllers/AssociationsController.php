@@ -1,0 +1,41 @@
+<?php
+require_once APPLICATION_PATH . '/controllers/UsersController.php';
+require_once APPLICATION_PATH . '/controllers/AdherentsController.php';
+
+class Association extends Associations
+{
+	public $a_fields = array();
+    public $a_data = array();
+    public $s_include_page = '';
+
+	function __construct() {
+        $this->init();
+    }
+    private function init()
+    {
+    	global $starter;
+
+		if(!isset($_SESSION['user_info'])){
+    		header("Location:" . $starter->HTTP_ROOT .$starter->s_lang . '/' . $starter->mods['subscribe']['referer'] );
+			exit();
+    	}else{
+			
+			$adherents = new AdherentsController();
+	    	$this->a_data = $adherents->getAdherentsByStructure($_SESSION['user_info']['user_id']);
+
+	    	
+	        //CSS
+			//$starter->a_css[] = array("rel"=>"stylesheet", "media"=>"all", "href"=> $starter->HTTP_ROOT . "!locked/lib/dropzone/css/dropzone.css");
+	        //$starter->a_css[] = array( "rel"=>"stylesheet", "media"=>"all", "href"=> $starter->HTTP_ROOT . "/!locked/lib/photon-geocoder-autocomplete/css/photon-geocoder-autocomplete.min.css");
+	        
+	        //JS
+	        $starter->a_js[]    = array("src" => $starter->HTTP_ROOT . "templates/" . $starter->s_template . "/modules/special/associations/js/main.js");
+
+			$this->s_include_page = '/modules/special/associations/views/' . (is_file(APPLICATION_PATH .'/modules/special/associations/views/' . $starter->s_display. '/adherents.php') ? $starter->s_display : 'default') . '/adherents.php';
+
+			// rel files
+			$s_rel_id = $starter->mods['associations']['modules']['adherents']['rel'];
+		}
+    }
+}
+?>

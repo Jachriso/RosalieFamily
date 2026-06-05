@@ -1,0 +1,3 @@
+body {background-color: #ffffff !important;}
+html body div#wrapper div#header div#admin-menu div#logo a{display:inline-block !important;padding: 10px;}
+a:after { content: " (" attr(href) ") "!important; display:none !important; } 

@@ -1,0 +1,19 @@
+	<section class="z100">
+        <div class="top">
+            <div class="padH20 padB20 padT40 flex justifSB">
+                <div class="maxW80pc">
+                    <a href="<?php echo $starter->HTTP_ROOT . ($starter->b_multilang ? $starter->s_lang . '/' : '') . $starter->mods['covoiturages']['referer'];?>.html">
+                        <svg data-name="Groupe 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="45" height="45" viewBox="0 0 103 103"><defs><clipPath id="clip-path"><rect id="Rectangle_1" data-name="Rectangle 1" width="103" height="103" fill="none"/></clipPath></defs><g id="Groupe_1" data-name="Groupe 1" clip-path="url(#clip-path)"><path id="Tracé_1" data-name="Tracé 1" d="M88.437,103H14.563A14.563,14.563,0,0,1,0,88.437V14.563A14.563,14.563,0,0,1,14.563,0H88.437A14.563,14.563,0,0,1,103,14.563V88.437A14.563,14.563,0,0,1,88.437,103" fill="#f48453"/><path id="Tracé_2" data-name="Tracé 2" d="M122.509,121.23a6.735,6.735,0,1,1-6.735-6.735,6.735,6.735,0,0,1,6.735,6.735" transform="translate(-77.492 -81.369)" fill="#fff"/><path id="Tracé_3" data-name="Tracé 3" d="M218.067,69.775a6.735,6.735,0,1,1-6.735-6.735,6.735,6.735,0,0,1,6.735,6.735" transform="translate(-145.402 -44.801)" fill="#fff"/><path id="Tracé_4" data-name="Tracé 4" d="M88.175,175.4a8.735,8.735,0,0,1-5.03-1.621c-4.789-3.367-7.424-11.633-1.46-25.039-1.877-1.739-3.346-1.769-4.342-1.606-7.25,1.179-16.364,17.894-20.406,28.152L51,172.946c1.2-3.061,12.146-29.966,25.316-32.112a10.873,10.873,0,0,1,8.314,2.088c7.029-12.6,14.067-18.18,20.942-16.592,14.807,3.428,16.894,37.43,17.181,47.769l-6.378.177c-.713-25.7-6.7-40.447-12.242-41.73-3.81-.885-9.358,4.8-14.877,15.225,9.382,12.118,8.853,20.77,5.033,24.93a8.257,8.257,0,0,1-6.115,2.7m-1.927-20.919c-3.018,8.49-1.178,12.852.566,14.079a2.021,2.021,0,0,0,2.776-.171c1.331-1.449,1.96-6.024-3.342-13.908" transform="translate(-36.244 -89.592)" fill="#fff"/></g></svg>
+                    </a>
+                </div>
+                <div class="w45 h45 relative">
+                    <!--<a class="fullH fullW flex alignfC justifFC" href="<?php echo $starter->HTTP_ROOT . ($starter->b_multilang ? $starter->s_lang . '/' : '') . $starter->mods['covoiturages']['referer'] . '/' . $starter->mods['covoiturages']['modules']['mes_covoiturages']['referer'];?>.html">-->
+                    <span class="fullH fullW flex alignfC justifFC">
+                        <svg class="w45" data-name="Groupe 15" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="27.933" height="27.933" viewBox="0 0 27.933 27.933"><defs><clipPath ><rect data-name="Rectangle 11" width="27.933" height="27.933" fill="none"/></clipPath></defs><g data-name="Groupe 14" clip-path="url(#clip-path)"><path data-name="Tracé 13" d="M19.311,1.063a13.966,13.966,0,1,0,8.622,12.9,13.966,13.966,0,0,0-8.622-12.9M13.964,2.877A11.275,11.275,0,0,1,25.128,12.55a1.946,1.946,0,0,1-1.838.2l-4.327-1.767a13.147,13.147,0,0,0-9.992,0L4.643,12.755a1.936,1.936,0,0,1-1.838-.2A11.275,11.275,0,0,1,13.964,2.877M12.256,22.136l-.351,3.28A12.927,12.927,0,0,1,3.468,17.5l3.618-.443a4.63,4.63,0,0,1,5.17,5.077m1.708-4.461a3.074,3.074,0,1,1,3.078-3.069,3.073,3.073,0,0,1-3.078,3.069m2.106,7.741-.349-3.264A4.606,4.606,0,0,1,20.865,17.1l3.6.441a12.861,12.861,0,0,1-8.394,7.874" transform="translate(0 0)" fill="#f48453"/></g></svg>
+                    </span>
+                    <!--</a>-->
+                    <div class="absolute ftwhite w25 h25 t--5 l--5 brad30 flex alignfC justifFC ft15 padT3" style="background: #8f9ce4; "><?php echo $starter->volants['user_volants'];?></div>
+                </div>
+            </div>
+        </div>
+    </section>

@@ -1,0 +1,14 @@
+/**********************/
+/*FONT*/
+/**********************/
+@font-face {
+    font-family: 'agrandirregular';
+    src: url('./!locked/fonts/agrandir-regular-webfont.eot');
+    src: url('./!locked/fonts/agrandir-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('./!locked/fonts/agrandir-regular-webfont.woff2') format('woff2'),
+         url('./!locked/fonts/agrandir-regular-webfont.woff') format('woff'),
+         url('./!locked/fonts/agrandir-regular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}

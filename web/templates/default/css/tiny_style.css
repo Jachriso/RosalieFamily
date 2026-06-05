@@ -1,0 +1,8 @@
+.tinymce ul{
+	list-style: inherit;
+	display: inherit;
+}
+.tinymce ul li{
+	list-style: inherit;
+	display: list-item;
+}

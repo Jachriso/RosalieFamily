@@ -1,0 +1,21 @@
+html, body{height: 100%;width: 100%; overflow: hidden;}
+#gmap { 
+	width: 100%;
+	height: calc(100vh);
+	min-height: 100vh;
+}
+.infoboxclose i{
+	right: 0;
+	position: absolute;
+    height: 25px;
+    font: normal normal normal 14px/1 FontAwesome;
+    color: #666;
+    z-index: 9999;
+    padding: 5px;
+}
+.infoboxclose .special-fa:hover {
+    background-color: #e75c21;
+}
+.infoBox {
+  border-radius: 10px;
+  }

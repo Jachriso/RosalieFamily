@@ -1,0 +1,29 @@
+.nav-bt .nav-link {
+  background: none !important;
+  font-weight: bolder;
+  border: none !important;
+}
+
+.nav-bt .nav-item{
+  border: none !important;
+  outline: none !important;
+}
+  
+/*.nav-link:hover path{fill: var(--color-white) !important;}*/
+.nav-link:hover {color: var(--color-white) !important;}
+
+/********************************************
+* ***************  MEDIA QUERIES ************
+* ******************************************/
+@media (max-width: 575.98px) {  }
+
+@media (max-width: 767.98px) {  }
+
+@media (max-width: 991.98px) {  }
+
+@media (max-width: 1199.98px) {  }
+
+@media (max-width: 1399.98px) {  }
+
+
+

@@ -1,0 +1,1352 @@
+/********************************************
+* *****************  VARS  ******************
+* ******************************************/
+:root{
+
+--color-first: #f48453;
+--color-back-orange:#f48453;
+--color-yellow:#F7A90B;
+--color-yellow20:#F7A90B20;
+--color-green:#33B3A6;
+--color-green20:#33B3A620;
+--color-blue:#0d6efd;
+
+
+--color-grey: #c1c0c0;
+--color-grey-light: #f0f0f0;
+--color-grey-light2: #77808D;
+--color-grey-hight: #69696A;
+  --font-family: "agrandirregular",sans-serif; 
+  --font-family_sec: "open-sans",sans-serif; 
+
+
+
+
+}
+body.dark{                       
+}
+/********************************************
+* *****************  GENERAL  ***************
+* ******************************************/
+body, main > *{
+  font-family: var(--font-family);
+  font-size: 2rem;
+}
+a{
+  text-decoration: none; 
+}
+a:not('.button'):hover{
+  text-decoration: underline; 
+  color:var(--color-white);
+}
+main{top:140px;position: relative;}
+
+/********************************************
+* *******************  SVG  *****************
+* ******************************************/
+
+/********************************************
+* *****************  SHADOW  ****************
+* ******************************************/
+.bshadow1 {box-shadow: 0 10px 15px -3px rgba(0,0,0,.07),0 4px 6px -2px rgba(0,0,0,.05);}
+.bshadow2 {box-shadow: 0px 0px 10px #333;}
+.bshadow3 {box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.13);}
+/********************************************
+* ***************  BACKGROUND  **************
+* ******************************************/
+.backgreyHight{background:var(--color-grey-hight)}
+                            .back1{background:var(--color-back-1)}
+                            .back2{background:var(--color-back-2)}
+                            .back3{background:var(--color-back-3)}
+                            .back4{background:var(--color-back-4)}
+                            .back5{background:var(--color-back-5)}
+.backorange{background:var(--color-back-orange)}
+.backgreyl{background:var(--color-grey-light)}
+
+.backyellow10{background: var(--color-yellow20);}
+.backgreen10{background: var(--color-green20);}
+
+.backgrounded{
+  background-image: url("../content/static/backgrounded.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.triangled{
+  display : inline-block;
+  height : 0;
+  width : 0;
+  border-top : 20px solid red;
+  border-left : 20px solid transparent;
+}
+/********************************************
+* ***************  BORDER  **************
+* ******************************************/
+.borderblack{border-color:var(--color-black)}
+.borderYellow{border-color:var(--color-yellow);}
+.borderGreen{border-color:var(--color-green);}
+.border4d{border-style: dashed;border-width: 4px}
+/********************************************
+* ****************  DIMENSIONS  *************
+* ******************************************/
+.object-pos1{object-position: 60% 50%}
+
+/********************************************
+* *****************  FONT  ******************
+* ******************************************/
+
+.ftblue{color:var(--color-blue)}
+.ftorange{color:var(--color-first)}
+.ftgrey{color:var(--color-grey)}
+.ftgreyLight2{color:var(--color-grey-light2)}
+
+.ftOpen{font-family: var(--font-family_sec);}
+ /********************************************
+ * ****************  BORDERS * ***************
+ * ******************************************/
+.borderwhite {
+  border-color: var(--color-white);
+}
+
+ /********************************************
+ * ****************  TINY MCE ****************
+ * ******************************************/
+
+ /********************************************
+ * ****************  ACCORDION ***************
+ * ******************************************/
+
+ /********************************************
+ * ****************  COLORS ***************
+ * ******************************************/
+.fillorange{fill: var(  --color-first ) ;}
+
+/********************************************
+* **************  AUTOCOMPLETE  *************
+* ******************************************/
+.ui-helper-hidden-accessible{display: none}
+.ui-menu {
+  background-color: var(--color-white1);
+  position: absolute;
+  top: 100%;
+  z-index: 1;
+  border-left: 1px solid;
+  border-right: 1px solid;
+  border-bottom: 1px solid;
+  border-color:var(--color-grey-light);
+  border-radius: 5px;
+  max-height: 30vh;
+  overflow: auto;
+}
+.ui-menu .ui-menu-item{
+  display: block;
+  cursor: pointer;
+  color:var(--color-black);
+  padding: 5px 0;
+}
+
+
+
+/********************************************
+* **************  PROGRESS BAR  *************
+* ******************************************/
+.progress.styled {
+  height: 3rem;
+  border-radius: 2.25rem;
+}
+.progress.styled .progress-bar-striped {
+  background-image:none;
+  background-size: 1rem 1rem;
+}
+.progress.styled .progress-bar {
+  background-color: #7bbe5f;
+  border-radius: 2.25rem;
+}
+
+
+/********************************************
+* ******************  CTA  ******************
+* ******************************************/
+i.hover:hover {
+  color: var(--color-edit);
+}
+.CTA{
+  border-radius: 40px;
+  border: 2px solid;
+  text-decoration: none;
+  padding: 10px 20px;
+  line-height: 1;
+}
+.CTA1{
+  border-radius: 10px;
+  border: 2px solid;
+  text-decoration: none;
+  padding: 3px 20px;
+}
+.CTA2{
+  border-radius: 50px;
+  border: 2px solid;
+  text-decoration: none;
+  padding: 10px 20px;
+  line-height: 1;  
+  width: 40px;
+  height: 44px;
+}
+.CTA3{
+  border-radius: 50px;
+  border: 2px solid;
+  text-decoration: none;
+  padding: 0px ;
+  line-height: 1;  
+  width: 40px;
+  height: 41px;
+}
+.CTAFirst{
+  background-color: var(--color-first);
+  color: var(--color-white);
+  transition: all .2s ease-out;
+  border-color: var(--color-first);
+}
+.CTAFirst:hover{
+  background-color: var(--color-white);
+  color: var(--color-first);
+}
+.CTAFirst:hover i.ftwhite{
+  color: var(--color-first);
+}
+.CTAGreen{
+  background-color: var(--color-green);
+  color: var(--color-white);
+  transition: all .2s ease-out;
+  border-color: var( --color-green);
+}
+.CTAGreen:hover{
+  background-color: var(--color-white);
+  color: var(--color-green);
+}
+
+.CTAWhite{
+  background-color: var(--color-blue);
+  color: var(--color-white);
+  transition: all .2s ease-out;
+  border-color: var(--color-white);
+}
+.CTAWhite:hover{
+  background-color: var(--color-white);
+  color: var(--color-blue);
+}
+.CTABTN{
+  border-bottom: 4px solid var(--color-black);
+  font-weight: bold;
+  font-size: 1.8rem;
+  color:var(--color-black);
+  line-height: 2.3rem;
+  padding-bottom: 5px;
+}
+.CTAOrange, .CTAOrangeOutline:hover{
+  background-color: var(--color-first);
+  color: var(--color-white);
+  transition: all .2s ease-out;
+  border-color: var(--color-first);
+}
+.CTAOrangeOutline{
+  background-color: transparent;
+  color: var(--color-first);
+  transition: all .2s ease-out;
+  border-color: var(--color-first);
+}
+.CTABlue{
+  border: 2px solid var(--color-blue);
+  background-color: var(--color-blue);
+  font-weight: bold;
+  font-size: 1.8rem;
+  color:var(--color-white);
+  line-height: 2.3rem;
+}
+.CTABlue:hover{
+  background-color: var(--color-white);
+  color: var(--color-blue);
+  transition: all .2s ease-out;
+}
+.CTAGreen{
+  border: 2px solid var(--color-green);
+  background-color: var(--color-green);
+  font-weight: bold;
+  font-size: 1.8rem;
+  color:var(--color-white);
+  line-height: 2.3rem;
+}
+.CTAGreen:hover{
+  background-color: var(--color-white);
+  color: var(--color-green);
+  transition: all .2s ease-out;
+}
+
+.btn.ftorange:hover {color:var(--color-first)}
+/********************************************
+* *****************  ELEMENT ****************
+* ******************************************/
+.template_lot_content, .template_service_content{transition:all 0.5s ease;}
+.template_lot_content.active, .template_service_content.active{height: initial;}
+.bloccat.inactiv{opacity:.2}
+.addCovoit svg {position: relative; z-index: 2;top:-20px}
+.addCovoit:before{
+  content: ' ';
+  background-color: #48abe0;
+  width: 40px;
+  height: 41px;
+  background-color: var(--color-grey-light);
+  border-radius: 10rem 10rem 10rem 10rem;
+  position: relative;
+  bottom: -20px;
+  display: block;
+  z-index: 1;
+}
+/********************************************
+* *****************  DROPZONE ***************
+* ******************************************/
+.dropzone{background:transparent !important;}
+.dz-default.dz-message{display: none;}
+.dropzone .dz-preview.dz-image-preview{background:transparent !important;}
+.dropzone.dz-max-files-reached{pointer-events: none;}
+.dropzone.dz-max-files-reached .defaultremoveDrop{pointer-events: initial;}
+.dropzone.dz-clickable .defaultremoveDrop *{cursor:pointer;}
+.dropzone:not(.dz-max-files-reached)::after {
+  min-height: 150px !important;
+  min-width: inherit !important;
+  text-align: center;
+  border-radius:10px;  
+  padding: 40px 5px !important;  
+  position: absolute;
+  top: 0;
+}
+/*.dropzone.max-files-reached::after {
+  background-color: transparent;
+  padding: 40px 70px;
+  content: ' '!important;
+  display: block;
+  background-image: none;
+  background-repeat: no-repeat;
+  background-position: 20px center;
+  background-size: 27px 23px;
+  font-size: 1.8rem;
+  margin: 10px 0;
+  width: 100%;
+  border: 2px dashed rgba(0, 0, 0, 0.3);
+}*/
+.dropzone.dz-max-files-reached::after {
+  margin: 10px 0;
+  border: 2px dashed rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  content: ' '!important;
+  display: block;
+  width: 100%;
+  min-height: 150px !important;
+  min-width: inherit !important;
+  text-align: center;
+  padding: 40px 5px !important;  
+  position: absolute;
+  top: 0;
+}
+.dropzone .dz-image {
+  border-radius: 20px;
+  background: #999;
+  background: linear-gradient(to bottom, #eee, #a6a3a3);
+}
+.dz-processing.dz-success.dz-complete, .dz-preview{display: inline-block;margin: 10px !important;}
+
+.dz-image, #preview-template{width:100%; margin-top:15px}
+.dz-image img{text-align: center;
+  object-fit: cover;
+  max-width: 100%;
+  height: 100%;}
+.fadrop{position: absolute;
+  left:50%;
+  top:50%;
+  transform:translate(-50%, -50%);
+  font-size:9rem;
+  opacity: .1;
+}
+#preview-template{
+  border-radius: 20px;
+  overflow: hidden;
+  width: 120px;
+  height: 120px;
+  position: relative;
+  display: block;
+  z-index: 10;
+}
+.inputdropzonebtn{
+  cursor: pointer
+}
+/********************************************
+* ******************  FIELD *****************
+* ******************************************/
+
+label .password-icon {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: calc(50% + 0px);
+  right: 20px;
+  transform: translateY(-50%);
+  width: 20px;
+  /*color: #f9f9f9;*/
+  transition: all 0.2s;
+}
+label .password-icon:hover {
+  cursor: pointer;
+  color: #ff4754;
+}
+
+label .password-icon .feather-eye-off {
+  display: none;
+}
+
+.bloc_on_error{background: red}
+input, select{
+  border-left: 0;
+  border-top: 0;
+  border-right: 0;
+  border-bottom: 1px solid var(--color-grey);
+}
+.inputBox{position: relative;}
+
+.inputBox input, .inputBox textarea, .inputBox select{
+  width: 100%;
+  padding: 7px;
+  background: transparent;
+  outline: none;
+  color: var(--color-black);
+  font-size: 1em;
+  transition: 0.5s;
+}
+.inputBox textarea{
+  white-space: break-spaces;
+}
+.btnlist{
+  width: 100%;
+  padding: 7px;
+  border: 1px solid var(--color-grey-light);
+  background: var(--color-white1);
+  border-radius: 5px;
+  outline: none;
+  font-size: 0.8em;
+  color: var(--color-black);
+  text-align: left;
+  transition: 0.5s;
+}
+
+.inputBox span {
+  position: absolute;
+  left: 0;
+  padding: 10px 0 0;
+  pointer-events: none;
+  font-size: 0.8em;
+  color: var(--color-black);
+  text-transform: uppercase;
+  transition: 0.5s;
+}
+span.inputBox  {
+  left: 0;
+  top:-7px;
+  padding: 10px 0 0;
+  pointer-events: none;
+  font-size: 0.8em;
+  color: var(--color-black);
+  text-transform: uppercase;
+  transition: 0.5s;
+}
+.inputBox input:valid ~ span, .inputBox textarea:valid ~ span, .inputBox select:valid ~ span,
+.inputBox input:focus ~ span, .inputBox textarea:focus ~ span, .inputBox select:focus ~ span,
+.inputBox span.inboxed {
+  color: var(--color-black);
+  transform: translateX(0px) translateY(-7px);
+  padding: 0 ;
+}
+
+.inputBox:nth-child(2) input:valid ~ span,
+.inputBox:nth-child(2) input:focus ~ span{
+background :var(--color-black); ;
+color: var(--color-white);
+border-radius: 2px;
+}
+
+.inputBox input:valid, .inputBox textarea:valid, .inputBox select:valid
+.inputBox input:focus, .inputBox textarea:focus, .inputBox select:focus{
+  /*border : 1px solid var(--color-grey-light);*/
+}
+
+form label {
+  font-size: smaller;
+  margin-bottom: 0.5em;
+  /*font-weight: 600;*/
+}
+
+form label:not(.nowdt) {
+  width: 100%;
+}
+
+input::placeholder{font-size: 2rem}
+
+label.radiofield, label.checkfield{
+    position: relative;
+    cursor: pointer;
+}
+label.radiofield input, label.checkfield input{
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+.checkmark {
+    position: relative;
+}
+.checkmarkbox {
+  font-family: "Font Awesome 5 Free";
+  content: '\f0c8';
+  font-size: 1.5rem;  
+  margin-right: 0.3rem  ;
+  width: 17px;
+  height: 17px;
+  display: inline-block;
+  font-weight: 900;  
+  background: white;
+}
+label.checkfield input:checked ~ .checkmarkbox::before {
+    top: 2px;
+    left: 2px;
+    position: relative
+}
+label.radiofield input:checked ~ .checkmark {
+    background-color: #000000;
+}
+label.radiofield input:checked ~ .checkmark {
+    background-color: #2ED693;
+}
+
+label.checkfield input:checked ~ .checkmarkbox::before {
+    content:"\f00c";
+    color: #2ED693;
+}
+label.radiofield .checkmark::before {
+    border: 2px solid #1B243F;
+}
+label.radiofield input.on_error ~ .checkmark::before {
+    border: 2px solid #e36360;
+}
+label.radiofield input:checked ~ .checkmark::after {
+    background: #1B243F;
+}
+label.radiofield.radiofieldgreen input:checked ~ .checkmark::after {
+    background: #2ED693;
+}
+/*******************************************
+* ************* BOUTON ***************
+* *****************************************/
+
+
+
+
+
+
+ .custom-btn {
+                                                background-color: var(--primary-color);
+                                                color: var(--text3-color);
+                                                height: 50px;
+                                                border-radius: 10px;
+                                                font-size: 1rem;
+                                                border: 0 solid transparent;
+                                                cursor: pointer;
+                                                place-items: center; 
+                                                text-decoration: none;
+                                                }
+                                                .custom-btn-2 {
+                                                background-color: var(--primary-color);
+                                                color: var(--text3-color);
+                                                height: 35px;
+                                                font-size: 1rem;
+                                                border: 0 solid transparent;
+                                                cursor: pointer;
+                                                text-decoration: none;
+                                                border-radius: 5px;
+                                                }
+                                                .custom-btn-3 {
+                                                  background-color: var(--panel-color);
+                                                  color: var(--color-blue);
+                                                  height: 45px;
+                                                  font-size: 1rem;
+                                                  border: 1px solid ;
+                                                  border-color:var(--border-color3) ;
+                                                  cursor: pointer;
+                                                  text-decoration: none;
+                                                  border-radius: 5px;
+                                                  }
+
+                                              
+
+                                                .custom-btn:hover, .custom-btn-2:hover {
+                                                background-color: var(--panel-color);
+                                                color: var(--color-blue);
+                                                border: 1px solid var(--border-color3);
+                                                }
+                                                .custom-btn-3:hover >*{
+                                                  background-color: var(--primary-color);
+                                                  color: var(--text3-color);
+                                                  }
+                                                  .custom-btn-3:hover {
+                                                    background-color: var(--primary-color);
+                                                    }
+
+
+
+
+
+
+
+
+
+/********************************************
+* ***************  photon-input ************
+* ******************************************/
+.photon-input{
+  -webkit-box-sizing: border-box !important;
+}
+.photon-input:focus {
+  width: 100% !important;
+}
+.photon-autocomplete{padding:0;}
+.photon-autocomplete li{width:100%;}
+.photon-autocomplete li:hover{color:#FFF}
+
+/********************************************
+* ***************  MEDIA QUERIES ************
+* ******************************************/
+@media (max-width: 575.98px) {  }
+
+@media (max-width: 767.98px) {  }
+
+@media (max-width: 991.98px) {  }
+
+@media (max-width: 1199.98px) {  }
+
+@media (max-width: 1399.98px) {  }
+
+
+
+
+
+
+
+
+
+
+
+                                               
+
+                                                /*******************************************
+                                                * ********* LIENS **********
+                                                * *****************************************/
+
+                                                .style-link{
+                                                color: var(--text2-color);
+                                                cursor: pointer;
+                                                }
+                                                .style-link:hover{
+                                                color: var(--color-blue);
+                                                font-size: 17px;
+                                                }
+
+                                                /*******************************************
+                                                * ********* HEADER **********
+                                                * *****************************************/
+                                                .bg{
+                                                background-color: var(--primary-color);
+                                                }
+
+                                                li a.surl {
+                                                position: relative;
+                                                display: inline;
+                                                padding: 10px 20px; 
+                                                white-space: nowrap;
+                                                overflow: hidden; 
+                                                }
+
+                                                li a.surl::before {
+                                                content: "";
+                                                position: absolute;
+                                                width: 0;
+                                                height: 3px;
+                                                bottom: 0;
+                                                left: 0;
+                                                background: rgba(255, 255, 255, 1); 
+                                                transition: width 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+                                                }
+
+                                                li a.surl:hover::before {
+                                                width: 100%;
+                                                }
+                                                li a.surl:active {
+                                                  font-weight: bold;
+                                                }
+
+                                                @media (max-width: 992px) {
+                                                  #navbarSupportedContent {
+                                                    margin-top: 15px;
+                                                  }
+                                                  
+                                                  li a.surl::before {
+                                                    display: none; 
+                                                  }
+                                                  li a.surl:hover {
+                                                    font-weight: bold; 
+                                                  }
+                                                }
+
+
+                                                .btn-edit {
+                                                background: var(--primary-color) ;
+                                                color: var(--text3-color);
+                                                }
+
+
+                                                /*******************************************
+                                                * ********* DROP ZONE **********
+                                                * *****************************************/
+
+
+                                                .wrap-drop h4 {
+                                                color: var(--color-blue);
+                                                font-size: 27px;
+                                                font-weight: 600;
+                                                text-align: center;
+                                                }
+
+                                                .wrap-drop .drop-form{
+                                                display: flex;
+                                                align-items: center;
+                                                justify-content: center;
+                                                flex-direction: column;
+                                                border-radius: 5px;
+                                                height: 100px;
+                                                margin: 30px;
+                                                cursor: pointer;
+                                                }
+                                                .container-drop .wrap-drop {
+                                                  border: 1px solid #ccc;
+                                                  border-radius: 10px;
+                                                  padding: 20px;
+                                                  background-color: #f5f5f5;
+                                                  margin: 10px;
+                                                }
+
+
+                                                /* Ajoutez d'autres règles CSS pour personnaliser vos éléments spécifiques */
+
+                                                /* SECTION FORM */
+                                                .drop-form :where(i,p) {
+                                                color: var(--color-blue);
+                                                }
+
+                                                .drop-form i {
+                                                font-size: 50px;
+                                                }
+                                                .drop-form p{
+                                                font-size: 16px;
+                                                margin-top: 15px;
+                                                }
+
+
+section .row i {
+  /*font-size: 30px;*/
+  /*color: var(--color-blue);*/
+}
+                                                section .details span {
+                                                font-size: 14px;
+                                                }
+
+/* SECTION PROGRESS AREA */
+
+.progress-area .row .content {
+  width: 100%;
+  margin-left: 15px;
+}
+.progress-area .details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 7px;
+}
+.progress-area .progress-bar {
+  height: 6px;
+  width: 100%;
+  background: var(--panel-color);
+  margin-bottom: 4px;
+  border-radius: 30px;
+}
+.prorgess-bar .progress {
+  height: 100%;
+  width: 0%;
+  background: var(--primary-color);
+  border-radius: inherit;
+}
+.prorgess-bar {
+  transition: var(--trans-05);
+}
+                                                /* SECTION UPLOADED AREA */
+                                                .uploaded-area{
+                                                max-height: 230px;
+                                                overflow-y: scroll;
+                                                }
+                                                .uploaded-area.onprogress {
+                                                max-height: 150px;
+
+                                                }
+                                                .uploaded-area::-webkit-scrollbar{
+                                                width: 0px;
+                                                }
+
+                                                .uploaded-area .row .content {
+                                                display: flex;    
+                                                align-items: center;
+                                                }
+
+                                                .uploaded-area .row .details {
+                                                display: flex;
+                                                margin-left: 15px;
+                                                flex-direction: column;
+                                                }
+
+                                                .uploaded-area .details .size {
+                                                font-size: 11px;
+                                                color: var(--primary-color);
+                                                }
+
+                                                .uploaded-area .fa-check {
+                                                color: var(--primary-color);
+                                                font-size: 16px;
+                                                }
+
+
+
+
+    
+
+                                                .menu-items li {
+                                                  list-style: none;
+                                                }
+                                                .menu-items li a {
+                                                  /* position: relative; */
+                                                  display: flex;
+                                                  align-items: center;
+                                                  height: 60px;
+                                                  text-decoration: none;
+                                                }
+
+                                                /* .menu-items li a::before{
+                                                  content: "";
+                                                  position: absolute;
+                                                  left: -7px;
+                                                  height: 5px;
+                                                  width: 5px;
+                                                  border-radius: 50%;
+                                                  background-color: red;
+                                                }  */
+
+                                                .menu-items li a i {
+                                                  font-size: 24px;
+                                                  min-width: 45px;
+                                                  height: 100%;
+                                                  display: flex;
+                                                  align-items: center;
+                                                  justify-content: center;
+                                                  color: var(--tittle-icon-color) ;
+                                                }
+
+                                                .menu-items li a .link-name {
+                                                  font-size: 12px;
+                                                  font-weight: 400;
+                                                  color: var(--tittle-icon-color) ;
+                                                  transition: var(--trans-05);
+
+
+                                                }
+                                                nav.nav-lr.close li a .link-name{
+                                                  opacity: 0;
+                                                  pointer-events: none;
+                                                }
+
+                                                .nav-lr .nav-links li a:hover .link-name{
+                                                 font-size: 20px;
+                                                }
+
+                                                .nav-lr .nav-links li a:hover i
+                                                {
+                                                  color: var(--tittle-icon-color);
+                                                  opacity: 0.8;
+                                                }
+                                                .menu-items .logout-mode{
+                                                  padding-top: 10px;
+                                                  border-top: 1px solid var(--border-color);
+
+                                                }
+                                                .menu-items .mode{
+                                                  display:flex; ;
+                                                  align-items: center;
+                                                  white-space: nowrap;
+
+                                                }
+.menu-items .mode-toggle{
+  position: absolute;
+  right: 14px;
+  height: 50px;
+  min-width: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.mode-toggle .switch {
+  position: relative;
+  display: inline-block;
+  height: 22px;
+  width: 40px;
+  border-radius: 25px;
+  background-color: var(--toggler-color);
+}
+
+                                                .switch::before {
+                                                  content: "";
+                                                  position: absolute;
+                                                  left: 5px;
+                                                  top: 50%;
+                                                  transform: translateY(-50%);
+                                                  height: 15px;
+                                                  width: 15px;
+                                                  background-color: var(--primary-color);
+                                                  border-radius: 50%;
+                                                }
+
+
+.sidebar-toggle {
+  font-size: 26px;
+  color: var(--tittle-icon-color);
+  cursor: pointer;
+}
+
+                                                
+
+                                                .top .search-box input {
+                                                  position: absolute;
+                                                  border: 1px solid var(--border-color);
+                                                  background-color: var(--primary-color);
+                                                  padding: 0 25px 0 50px;
+                                                  height: 100%;
+                                                  width: 100%;
+                                                  color: var(--tittle-icon-color);
+                                                  font-size: 15px;
+                                                  font-weight: 400;
+                                                  outline: none;
+                                                }
+                                                .top .search-box input .text {
+                                                  color: var(--color-white);
+                                                }
+
+                                                .top .search-box i{
+                                                  position: absolute;
+                                                  left: 15px;
+                                                  top: 50%;
+                                                  transform: translateY(-50%);
+                                                  font-size: 22px;
+                                                  color: var(--tittle-icon-color);
+                                                }
+
+                                                .top a {
+                                                  text-decoration: none;
+                                                }
+                                                .top a i{
+                                                  font-size: 24px;
+                                                  min-width: 45px;
+                                                }
+
+
+
+
+
+                                                .box .text {
+                                                  white-space: nowrap;
+                                                  font-size: 18px;
+                                                  font-weight: 500;
+                                                  color: var(--text3-color);
+                                                }
+                                                .box i {
+                                                  padding-bottom: 10px;
+                                                  color: var(--tittle-icon-color);
+                                                  font-size: 35px;
+                                                }
+
+                                                
+                                                .recap-data .data{
+                                                  display: flex;
+                                                  flex-direction: column;
+                                                  width: calc(100%/5 - 15px);
+                                                }
+                                                .data .data-title {
+                                                  font-size: 20px;
+                                                  font-weight: 500;
+                                                  color: var(--text2-color);
+
+                                                }
+
+                                                .data .data-list {
+                                                  font: 18px;
+                                                  font-weight: 400;
+                                                  margin-top: 20px;
+                                                  white-space: nowrap;
+                                                  color: var(--text2-color);
+                                                }
+
+
+  @media (max-width:1000px) {
+    
+    .recap-data {
+      overflow-y: scroll;
+    }
+  }
+
+@media (max-width: 768px) {
+
+                                                  
+
+
+}
+                                                @media (max-width: 560px) {
+                                                  
+                                                }
+@media (max-width: 500px) {
+
+    
+                                                 
+                                                  .menu-items {
+                                                    padding-left: 20px;
+                                                  }
+
+                                                 
+}
+                                                  
+                                                /* DRAG */
+                                                .contain-drag {
+                                                 
+                                                  background-color: var(--panel-color);
+                                                  display: flex;
+                                                  align-items: center;
+                                                  flex-direction: column;
+                                                }
+
+                                                #left {
+                                                  display: flex;
+                                                  height: 50px;
+                                                  width: 100%;
+                                                  border: 0.5px solid var(--border-color2);
+                                                }
+                                                #right {
+                                                  display: flex;
+                                                  height: 50px;
+                                                  width: 100%;
+                                                  border: 0.5px solid var(--border-color2);
+                                                }
+
+                                                .list {
+                                                  border: 0.5px solid var(--border-color2);
+                                                  height: 30px;
+                                                  width: calc(100%/4 );
+                                                  margin: 10px;
+                                                  color: var(--text2-color);
+                                                  display: flex;
+                                                  align-items: center;
+                                                  cursor: grab;
+                                                }
+
+                                                .list i {
+                                                  width: 10px;
+                                                  margin-right: 15px;
+                                                  margin-left: 15px;
+                                                } 
+
+                                                @media (max-width: 767px) {
+                                                  .list i {
+                                                   display: none;
+                                                  } 
+                                                  .list {
+                                                    /* background: var(--primary-color); */
+                                                    border: 0.5px solid var(--border-color2);
+                                                    height: 30px;
+                                                    width: calc(100%/4 );
+                                                    margin: 10px;
+                                                    color: var(--text2-color);
+                                                    display: flex;
+                                                    align-items: center;
+                                                    justify-content: center;
+                                                    cursor: grab;
+                                                  
+                                                  }
+                                                  
+                                                }
+                                                @media (max-width: 900px) {
+                                                  form.form-step   {
+                                                    max-width: 400px;
+                                                    color: var(--text2-color);
+                                                    margin: 0 auto;
+
+                                                  }
+                                                }
+                                                @media (max-width: 768px) {
+                                                  form > div {
+                                                    color: var(--text2-color);
+                                                  }
+                                                }
+
+                                                /* multi-step-form */
+                                                .container-form {
+                                                  max-width: 900px;
+                                                  margin: 0 auto;
+                                                }
+
+                                                .form-box {
+                                                  display: flex;
+                                                  flex-direction: column;
+                                                  border-radius: 15px;
+                                                  background-color: var(--panel-color);
+                                                }
+
+                                                /* ==> progression */
+                                                .form-box .progression {
+                                                  position: relative;
+                                                  /* margin-top: 30px; */
+                                                }
+                                                /* ==> progress step */
+
+                                                .progression ul.progress-steps {
+                                                  display: flex;
+                                                  flex-direction: row;
+                                                  align-items: center;
+                                                  justify-content: center;
+                                                  gap: 2em;
+                                                }
+
+                                                li.step {
+                                                  width: 100%;
+                                                }
+                                                .progression ul.progress-steps li {
+                                                  position: relative;
+                                                  display: flex;
+                                                  align-items: flex-start;
+                                                  margin-bottom: 2em;
+
+                                                }
+                                                .progression ul.progress-steps li > span{
+                                                  position: relative;
+                                                  width: 40px;
+                                                  height: 40px;
+                                                  display: flex;
+                                                  align-items: center;
+                                                  justify-content: center;
+                                                  margin-right: 1em;
+                                                  border-radius: 50%;
+                                                  background-color: var(--border-color4);
+                                                  color: var(--text2-color);
+                                                }
+                                                /* .progression ul.progress-steps li >p {
+                                                  margin-bottom: 0;
+                                                } */
+
+
+                                                .progression ul.progress-steps li.active > span{
+                                                  color: var(--text3-color);
+                                                  background-color: var(--primary-color);
+                                                  border: 4px solid var(--box-1-color);
+                                                }
+                                                .progression ul li p {
+                                                  position: absolute;
+                                                  top: -2em;
+                                                  font-size: 12px;
+                                                }
+
+                                                /* ===> Form */
+                                                .form-box form {
+                                                  width: 100%;
+                                                  background-color: var(--panel-color);
+                                                  border-radius: 0px 15px 0 15px;
+                                                }
+
+                                            
+                                                form h3 {
+                                                  color: var(--text2-color);
+                                                }
+                                               
+
+                                                form :where(input, select) {
+                                                  height: 40px;
+                                                  /*border-radius: 7px;*/
+                                                  outline-color: var(--border-color4);
+                                                  background-color: transparent ;
+                                                  color: var(--text2-color);
+                                                }
+
+                                                
+                                                form .checkbox input {
+                                                width: 15px;
+                                                height: 15px;
+                                                background-color: var(--panel-color);
+                                                }
+
+                                                .btn-group {
+                                                  display: flex;
+                                                  flex-wrap: wrap;
+                                                  gap: 1em;
+                                                  margin-top: 2em;
+                                                }
+
+                                                .btn-group [class*="btn-"] {
+                                                  background-color: var(--primary-color);
+                                                  color: var(--text3-color);
+                                                  padding: 0.5em 2em;
+                                                  border: none;
+                                                  border-radius: 5px;
+                                                  cursor: pointer;
+                                                  -webkit-transition: background-color .3s, border-color .3s ease-out;
+                                                  transition: background-color .3s, border-color .3s ease-out;
+                                                  font-size: small;
+                                                }
+
+                                                .btn-group [class*="btn-"]:hover {
+                                                background-color: var(--panel-color);
+                                                border: 1px solid var(--border-color3);
+                                                color: var(--color-blue);
+                                                }
+
+
+                                                @keyframes fadeIn {
+                                                  0%{
+                                                    opacity: 0;
+                                                    -webkit-transform: translateY(10%);
+                                                    transform: translateY(10%);
+                                                  }
+                                                  100%{
+                                                    opacity: 01;
+                                                    -webkit-transform: translateY(0);
+                                                    transform: translateY(0);
+                                                  }
+                                                }
+                                                
+
+                                                 
+                                                @media screen and (min-width: 900px) {
+                                                  .form-box{
+                                                    flex-direction: row;
+                                                  }
+                                                  .form-box .progression {
+                                                    flex: 1 0 35%;
+                                                    min-width: 300px;
+                                                    margin-top: 30px;
+                                                  }
+                                                  .progression ul.progress-steps{
+                                                    flex-direction: column;
+                                                    /* gap: 0.5; */
+                                                  }
+                                                  .progression ul.progress-steps li:not(:last-child)::before {
+                                                    content: '';
+                                                    position: absolute;
+                                                    left :20px;
+                                                    top: 30px;
+                                                    width: 2px;
+                                                    height: 80px;
+                                                    background-color: var(--border-color4);
+                                                  }
+                                                  .progression ul.progress-steps li > span{
+                                                    margin-right: 0;
+                                                  }
+                                                  .progression ul {
+                                                    padding-left: 0;
+                                                  }
+                                                  .progression ul.progress-steps {
+                                                    gap: 2em;
+                                                    padding-left: 10px;
+                                                  }
+
+                                                  .progression ul li p {
+                                                    position: relative;
+                                                    top: auto;
+                                                    font-size: inherit;
+                                                    padding: 10px 0 0 10px;
+                                                  }
+                                                  .form-box form {
+                                                    border-radius: 0px 15px 15px 0;
+                                                  }
+                                                  form > div {
+                                                    margin: 0;
+                                                    color: var(--text2-color);
+                                                  }
+                                                }
+
+                                                .card {
+                                                  color: var(--text2-color);
+                                                  background-color: var(--panel-color);
+                                                }
+                                                .dark {
+                                                  color: var(--text2-color);
+                                                  background-color: var(--panel-color);
+                                                }
+                                                /* EMAIL  */
+
+                                                table {
+                                                  border-spacing: 0;
+                                                }
+                                                td {
+                                                 padding: 0;
+                                                }
+                                                .size {
+                                                   border: 0;
+                                                   width: 300px;
+                                                   height: 200px;
+
+                                                }
+
+
+                                                #background{
+                                                  background-color: #d7d5d5;
+                                                }
+                                                .content-email {
+                                                   width: 600px;
+                                                   table-layout: fixed;
+                                                   background-color: #fff;
+                                                   margin: 0 auto;
+                                                }
+                                                .main-email {
+                                                   background-color: #fff;
+                                                   width: 100%;
+                                                   max-width: 600px;
+                                                }
+                                                .header-icone {
+                                                  background-color: var(--primary-color);
+                                                }
+                                                .header-logo {
+                                                  background-color: var(--primary-color);
+                                                }
+                                                .header-logo td a{
+                                                  color: var(--panel-color);
+
+                                                }
+                                                .footer-mail {
+                                                  background: var(--primary-color);
+                                                }
+                                                @media screen and (max-width: 600px) {
+                                                  .content-email {
+                                                    max-width: 100%;
+                                                    table-layout: fixed;
+                                                    margin: 0 auto;
+                                                 }
+                                                 .main-email {
+                                                    max-width: 100%;
+                                                 }
+                                                }
